@@ -8,7 +8,7 @@ unzip /tmp/frontend.zip
 vim /etc/nginx/default.d/expense.conf 
 proxy_http_version 1.1;
 
-location /api/ { proxy_pass http://localhost:8080/; }
+location /api/ { proxy_pass http://3.239.204.215:8080/; }
 
 location /health {
   stub_status on;
